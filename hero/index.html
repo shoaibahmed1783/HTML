@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Rubik", sans-serif;
+        color: #fff;
+        font-size: 62.5%;
+      }
+      .container {
+        /* width: 1200px; */
+        height: 100vh;
+        background-image: linear-gradient(
+            to top left,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("/hero.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        /* margin: 0 auto; */
+      }
+      header {
+        max-width: 120rem;
+      }
+      nav {
+        display: flex;
+        margin-top: 5rem;
+        justify-content: space-between;
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 500;
+      }
+      /* img {
+        width: 800px;
+      } */
+      .btn {
+        padding: 1.6rem 3.2rem;
+        color: #fff;
+        background-color: black;
+        border-radius: 0.9rem;
+        text-decoration: none;
+        font-weight: 800;
+      }
+      .btn:hover {
+        color: black;
+        background-color: #fff;
+      }
+      .space {
+        width: 75vw;
+      }
+      .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .area {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25vh;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 4rem;
+        line-height: 1.6;
+        /* flex-stretch: 0; */
+        /* flex-grow: 1; */
+        /* flex-shrink: 0; */
+      }
+      h1 {
+        font-size: 5rem;
+        font-weight: 800;
+      }
+      .num {
+        /* display: flex; */
+        /* justify-content: center; */
+        margin: 10rem;
+        font-weight: 700;
+
+        font-size: 30rem;
+        color: #dee2e6;
+        z-index: 3;
+      }
+      p {
+        font-size: 2.2rem;
+      }
+      .second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 40rem;
+        position: relative;
+      }
+      .round {
+        /* max-width: 40rem;
+        max-height: 40rem;
+        margin: auto 0;
+        margin-top: 10rem;
+        border-radius: 50%;
+         flex-grow: 1;
+        content: "";
+        display: block;
+        color: black;
+        background-color: antiquewhite;
+        position: absolute;
+        z-index: -1; */
+        content: "";
+        display: block;
+        width: 60rem;
+        padding-bottom: 60rem;
+        background-color: #fdf2e9;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+      }
+      .abs {
+        position: absolute;
+        padding-bottom: 40rem;
+        width: 40rem;
+        float: left;
+        background-color: aqua;
+        z-index: 2;
+        /* top: 20px; */
+      }
+      .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card-1 {
+        display: flex;
+        width: 353px;
+        height: 700px;
+        color: black;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 200px;
+        border: solid 2px #868e96;
+        border-radius: 5%;
+      }
+      .card-img {
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        width: 350px;
+      }
+      .card-head {
+        padding: 0 25px;
+        font-size: 38px;
+        color: black;
+        line-height: 1;
+      }
+      .card-para {
+        padding: 0 25px;
+        font-size: 20px;
+        color: black;
+      }
+      .card-ul {
+        padding: 0 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-left: 20px;
+      }
+      .card-li {
+        font-size: 15px;
+        color: black;
+      }
+      .card-1:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div><p>Logo</p></div>
+          <div><p>Menu</p></div>
+        </nav>
+        <div class="content">
+          <div class="area">
+            <h1>A Healthy Meal Delivered to your door every single door</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequatur, voluptate neque delectus alias reiciendis blanditiis,
+              nihil provident laboriosam harum magnam reprehenderit, eaque
+              officiis distinctio rerum!
+            </p>
+            <a class="btn" href="#"><p>Start Eating well</p></a>
+          </div>
+          <div class="space"></div>
+        </div>
+      </header>
+      <!-- <img src="../hero.jpg" alt="" /> -->
+    </div>
+    <div class="second">
+      <p class="num">01</p>
+      <div class="round"></div>
+      <div class="round abs"></div>
+    </div>
+    <div class="cards">
+      <div class="card-1">
+        <img src="meal-1.jpg" alt="" class="card-img" />
+        <h1 class="card-head">Veg Food for Humans lover</h1>
+        <p class="card-para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
+          aut recusandae quod rem perferendis maiores vel laudantium fuga
+          blanditiis atque?
+        </p>
+        <ul class="card-ul">
+          <li class="card-li">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, commodi.
+          </li>
+          <li class="card-li">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, commodi.
+          </li>
+          <!-- <li class="card-li">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, commodi.
+          </li>
+          <li class="card-li">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, commodi.
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
